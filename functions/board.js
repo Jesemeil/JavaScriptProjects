@@ -1,14 +1,14 @@
 function createBoard(length, width, pieces) {
-    // Initialize the empty board with spaces
+
     var board = Array.from({ length }, () =>
       Array.from({ length: width }, () => " ")
     );
   
-    // Populate the board with pieces
+    
     for (var piece of pieces) {
       var { row, col, value } = piece;
   
-      // Check if the row and column indices are within bounds
+      
       if (row >= 0 && row < length && col >= 0 && col < width) {
         board[row][col] = value;
       }
