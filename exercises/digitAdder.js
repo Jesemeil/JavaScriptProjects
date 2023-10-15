@@ -10,7 +10,7 @@ function addDigits(number) {
     return number;
   }
   
-  // Example usage:
+  
   const number = 12345;
   const result = addDigits(number);
   console.log(`The sum of the digits of ${number} is: ${result}`);
