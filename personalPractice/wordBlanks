@@ -1,0 +1,10 @@
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+    var result = "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb;
+    return result;
+    
+}
+
+
+finalResult = wordBlanks("wife", "beautiful", "care", "wholeheartedly");
+
+console.log(finalResult);
