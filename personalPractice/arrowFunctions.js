@@ -6,8 +6,8 @@ const greet = () => "Hello, world!";
 
 console. log(greet());
 
-const squareElements = (arr) =>arr.map((y) => y * y);
+const squareElements = (arr) =>arr.map(y => y * y);
 
-const originalArray = [2, 3, 4, 5, 6];
+const originalArray = [2, 3, 4, 5, 7];
 
 console.log(squareElements(originalArray));
