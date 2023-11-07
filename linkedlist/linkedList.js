@@ -12,7 +12,7 @@ class LinkedList {
 
     this.getHead = () => {
       if (this.head !== null) {
-        return this.head.data; 
+        return this.head.data;
       }
     };
 
@@ -38,7 +38,7 @@ class LinkedList {
 
     this.getLast = () => {
       if (this.head === null) {
-        return null; 
+        return null;
       }
       let current = this.head;
       while (current.nextElement !== null) {
@@ -49,11 +49,11 @@ class LinkedList {
 
     this.deleteAtEnd = () => {
       if (this.head === null) {
-        return; 
+        return;
       }
 
       if (this.head.nextElement === null) {
-        this.head = null; 
+        this.head = null;
       } else {
         let current = this.head;
         let prev = null;
@@ -63,7 +63,7 @@ class LinkedList {
           current = current.nextElement;
         }
 
-        prev.nextElement = null; 
+        prev.nextElement = null;
       }
     };
 
@@ -71,20 +71,20 @@ class LinkedList {
       let current = this.head;
       while (current !== null) {
         if (current.data === val) {
-          return true; 
+          return true;
         }
         current = current.nextElement;
       }
-      return false; 
+      return false;
     };
 
     this.delete = (val) => {
       if (this.head === null) {
-        return; 
+        return;
       }
 
       if (this.head.data === val) {
-        this.head = this.head.nextElement; 
+        this.head = this.head.nextElement;
         return;
       }
 
@@ -97,15 +97,45 @@ class LinkedList {
       }
 
       if (current === null) {
-        return; 
+        return;
       }
 
-      prev.nextElement = current.nextElement; 
+      prev.nextElement = current.nextElement;
+    };
+
+    this.getLength = () => {
+      let current = this.head;
+      let length = 0;
+
+      while (current !== null) {
+        length++;
+        current = current.nextElement;
+      }
+
+      return length;
+    };
+
+    this.removeDuplicates = () => {
+      if (!this.head) {
+        return; // If the list is empty, there are no duplicates to remove.
+      }
+
+      let current = this.head;
+
+      while (current) {
+        let runner = current;
+        while (runner.nextElement) {
+          if (runner.nextElement.data === current.data) {
+            runner.nextElement = runner.nextElement.nextElement; // Skip the duplicate node.
+          } else {
+            runner = runner.nextElement;
+          }
+        }
+        current = current.nextElement;
+      }
     };
   }
 }
-
-  
 
 LinkedList.prototype.isEmpty = function () {
   return this.head === null;
@@ -113,16 +143,18 @@ LinkedList.prototype.isEmpty = function () {
 
 LinkedList.prototype.printElements = function () {
   let element = this.head;
+  let result = "";
 
   while (element !== null) {
-    process.stdout.write(`${element.data} ->`);
+    result += `${element.data} -> `;
     element = element.nextElement;
   }
-  process.stdout.write(`null`);
+  result += "null";
+
+  console.log(result);
 };
 
 module.exports = LinkedList;
-
 
 
 
