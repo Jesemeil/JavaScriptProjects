@@ -58,3 +58,20 @@ button:hover {
 .student p {
   margin: 0;
 }
+
+.welcome-message {
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  background-color: green;
+  padding: 10px;
+  max-width: 350px;
+}
+
+.login-prompt {
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  background-color: red;
+  padding: 10px;
+  max-width: 350px;
+  margin-left: 10px;
+}
