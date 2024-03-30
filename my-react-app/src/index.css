@@ -38,9 +38,23 @@ button {
 }
 
 button:active {
-  opacity: 1; /* Opacity set to 0.3 when button is clicked */
+  opacity: 1;
 }
 
 button:hover {
-  opacity: 0.1; /* Opacity set to 1 when mouse hovers over the button */
+  opacity: 0.4;
+}
+
+.student {
+  border: 1px solid black;
+  max-width: 250px;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  padding: 32px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.student p {
+  margin: 0;
 }
