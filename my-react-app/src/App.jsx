@@ -7,6 +7,9 @@ import UserGreeting from "./UserGreeting";
 import List from "./List";
 import List1 from "./List1";
 import List2 from "./List2";
+import ProfilePicture from "./ProfilePicture";
+import MyComponent from "./MyComponent";
+import Counter from "./Counter";
 
 function App() {
   const fruits = [
@@ -48,9 +51,14 @@ function App() {
       <UserGreeting />
       <List />
       <List1 />
-      <List2 items={fruits} category="Fruits" />
-      <List2 items={vegetables} category="vegetables" />
-      <List2 items={products} category="Products" />
+      {fruits.length > 0 && <List2 items={fruits} category="Fruits" />}
+      {vegetables.length > 0 && (
+        <List2 items={vegetables} category="Vegetables" />
+      )}
+      {products.length > 0 && <List2 items={products} category="Products" />}
+      <ProfilePicture />
+      <MyComponent />
+      <Counter />
     </>
   );
 }
