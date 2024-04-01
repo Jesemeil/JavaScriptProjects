@@ -25,6 +25,14 @@ function App() {
     { id: 10, name: "broccoli", calories: 73 },
   ];
 
+  const products = [
+    { id: 11, name: "Egg", calories: 45 },
+    { id: 12, name: "Meat", calories: 95 },
+    { id: 13, name: "Turkey", calories: 56 },
+    { id: 14, name: "Pork", calories: 67 },
+    { id: 15, name: "Pig-meat", calories: 73 },
+  ];
+
   return (
     <>
       <Header />
@@ -40,8 +48,9 @@ function App() {
       <UserGreeting />
       <List />
       <List1 />
-      <List2 items={fruits} category="fruits" />
+      <List2 items={fruits} category="Fruits" />
       <List2 items={vegetables} category="vegetables" />
+      <List2 items={products} category="Products" />
     </>
   );
 }
