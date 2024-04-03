@@ -3,7 +3,9 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   const handleDecrementChange = () => {
-    setCount(count - 1);
+    setCount((c) => c - 1);
+    setCount((c) => c - 1);
+    setCount((c) => c - 1);
   };
 
   const handleResetChange = () => {
@@ -11,7 +13,9 @@ function Counter() {
   };
 
   const handleIncrementChange = () => {
-    setCount(count + 1);
+    setCount((count) => count + 1);
+    setCount((count) => count + 1);
+    setCount((count) => count + 1);
   };
 
   return (
