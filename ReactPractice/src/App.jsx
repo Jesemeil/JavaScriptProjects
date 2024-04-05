@@ -1,3 +1,4 @@
+import CarComponent from "./CarComponent";
 import Cart from "./Cart";
 import Counter from "./Counter";
 import MyComponent from "./MyComponent";
@@ -10,6 +11,7 @@ function App() {
       <MyComponent />
       <Counter />
       <Cart />
+      <CarComponent />
     </>
   );
 }
