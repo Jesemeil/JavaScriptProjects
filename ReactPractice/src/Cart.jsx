@@ -5,7 +5,7 @@ function Cart() {
   const handleAddFood = () => {
     const newFood = document.getElementById("foodInput").value;
     document.getElementById("foodInput").value = "";
-    setFoods((f) => [...foods, newFood]);
+    setFoods((prevFoods) => [...prevFoods, newFood]);
   };
 
   function handleRemoveFood(index) {
