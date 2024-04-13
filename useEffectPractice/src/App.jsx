@@ -1,4 +1,5 @@
 import MyComponent from "./MyComponent";
+import ComponentA from "./ComponentA";
 import Measurement from "./assets/Measurement";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <MyComponent />
       <Measurement />
+      <ComponentA />
     </>
   );
 }

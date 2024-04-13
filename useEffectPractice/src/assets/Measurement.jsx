@@ -10,7 +10,7 @@ function Measurement() {
   };
   useEffect(() => {
     window.addEventListener("resize", handleResize);
-    console.log("Event LISTENER ADDED");
+    console.log("EVENT LISTENER ADDED");
 
     return () => {
       window.removeEventListener("resize", handleResize);
