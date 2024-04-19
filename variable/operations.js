@@ -1,8 +1,8 @@
 let left_operand = 10;
 let right_operand = 5;
-let operator = "/";
+let operator = "+";
 
-let ans;
+let ans = "";
 switch(operator){
     case "+":
         ans = right_operand + left_operand;
