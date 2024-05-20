@@ -1,0 +1,98 @@
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+}
+
+.card .card-image {
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .card-title {
+  font-family: Arial, sans-serif;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.card .card-text {
+  font-family: Arial, sans-serif;
+  color: gray;
+}
+
+button {
+  background-color: blue;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+button:active {
+  opacity: 1;
+}
+
+button:hover {
+  opacity: 0.4;
+}
+
+.student {
+  border: 1px solid black;
+  max-width: 250px;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  padding: 32px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.student p {
+  margin: 0;
+}
+
+.welcome-message {
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  background-color: green;
+  padding: 10px;
+  max-width: 350px;
+}
+
+.login-prompt {
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  background-color: red;
+  padding: 10px;
+  max-width: 350px;
+  margin-left: 10px;
+}
+
+.list-category {
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  color: white;
+  background-color: blue;
+
+  text-align: center;
+}
+
+.list-items {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  text-align: center;
+  list-style: none;
+}
+
+.list-items li:hover {
+  color: lightgray;
+  cursor: pointer;
+}
